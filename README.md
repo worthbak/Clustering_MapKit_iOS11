@@ -1,5 +1,5 @@
 # Treasure_iOS
-An example app that demonstrates native annotation clustering in MapKit and iOS 11. Created to accompany this blog post: !!!!!
+An example app that demonstrates native annotation clustering in MapKit and iOS 11. Created to accompany this blog post: [Clustering with MapKit on iOS 11](https://medium.com/@worthbak/clustering-with-mapkit-on-ios-11-a578baada84a)
 
 The app should build without issue in Xcode 9.x - simply clone or download the repo and open the Xcode project.
 
