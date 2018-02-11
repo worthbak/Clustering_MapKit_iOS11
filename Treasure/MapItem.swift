@@ -10,6 +10,10 @@ import MapKit
 final class MapItem: NSObject, MKAnnotation {
     let coordinate: CLLocationCoordinate2D
     
+    var image: UIImage {
+        return #imageLiteral(resourceName: "annotation")
+    }
+    
     init(coordinate: CLLocationCoordinate2D) {
         self.coordinate = coordinate
     }
