@@ -15,6 +15,7 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        mapView.delegate = self
         mapView.register(MapItemAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         mapView.register(ClusterAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultClusterAnnotationViewReuseIdentifier)
         
@@ -31,3 +32,15 @@ final class ViewController: UIViewController {
     
 }
 
+extension ViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        guard view is ClusterAnnotationView else { return }
+        
+        // if the user taps a cluster, zoom in
+        let currentSpan = mapView.region.span
+        let zoomSpan = MKCoordinateSpan(latitudeDelta: currentSpan.latitudeDelta / 2.0, longitudeDelta: currentSpan.longitudeDelta / 2.0)
+        let zoomCoordinate = view.annotation?.coordinate ?? mapView.region.center
+        let zoomed = MKCoordinateRegion(center: zoomCoordinate, span: zoomSpan)
+        mapView.setRegion(zoomed, animated: true)
+    }
+}
