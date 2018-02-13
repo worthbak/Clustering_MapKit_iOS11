@@ -15,6 +15,8 @@
 		389E10352020BF8F00D2B1BA /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E10342020BF8F00D2B1BA /* Helpers.swift */; };
 		389E103D2021F7BA00D2B1BA /* MapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E103C2021F7BA00D2B1BA /* MapItem.swift */; };
 		389E103F2021F89A00D2B1BA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 389E103E2021F89A00D2B1BA /* README.md */; };
+		38B50CBF20308D5C001F21B7 /* MapItemAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B50CBE20308D5C001F21B7 /* MapItemAnnotationView.swift */; };
+		38B50CC120308D65001F21B7 /* ClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B50CC020308D65001F21B7 /* ClusterAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		389E10342020BF8F00D2B1BA /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		389E103C2021F7BA00D2B1BA /* MapItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItem.swift; sourceTree = "<group>"; };
 		389E103E2021F89A00D2B1BA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		38B50CBE20308D5C001F21B7 /* MapItemAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItemAnnotationView.swift; sourceTree = "<group>"; };
+		38B50CC020308D65001F21B7 /* ClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				1E87F091201D3D0600663EAC /* AppDelegate.swift */,
 				1E87F093201D3D0600663EAC /* ViewController.swift */,
 				389E103C2021F7BA00D2B1BA /* MapItem.swift */,
+				38B50CBE20308D5C001F21B7 /* MapItemAnnotationView.swift */,
+				38B50CC020308D65001F21B7 /* ClusterAnnotationView.swift */,
 				389E10342020BF8F00D2B1BA /* Helpers.swift */,
 				1E87F095201D3D0600663EAC /* Main.storyboard */,
 				1E87F098201D3D0600663EAC /* Assets.xcassets */,
@@ -150,6 +156,8 @@
 				1E87F094201D3D0600663EAC /* ViewController.swift in Sources */,
 				389E10352020BF8F00D2B1BA /* Helpers.swift in Sources */,
 				1E87F092201D3D0600663EAC /* AppDelegate.swift in Sources */,
+				38B50CC120308D65001F21B7 /* ClusterAnnotationView.swift in Sources */,
+				38B50CBF20308D5C001F21B7 /* MapItemAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
