@@ -24,10 +24,7 @@ final class MapItem: NSObject, MKAnnotation {
     
     let coordinate: CLLocationCoordinate2D
     let itemType: ItemType
-    
-    var image: UIImage {
-        return itemType.image
-    }
+    var image: UIImage { return itemType.image }
     
     init(coordinate: CLLocationCoordinate2D) {
         self.coordinate = coordinate

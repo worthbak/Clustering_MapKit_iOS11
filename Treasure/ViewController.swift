@@ -16,8 +16,12 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         
         mapView.delegate = self
-        mapView.register(MapItemAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
-        mapView.register(ClusterAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultClusterAnnotationViewReuseIdentifier)
+        mapView.register(
+            MapItemAnnotationView.self,
+            forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        mapView.register(
+            ClusterAnnotationView.self,
+            forAnnotationViewWithReuseIdentifier: MKMapViewDefaultClusterAnnotationViewReuseIdentifier)
         
         let centerCoordinate = CLLocationCoordinate2D(latitude: 40.0166, longitude: -105.2817)
         let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
